@@ -73,9 +73,8 @@ def is_allowed(ip):
 
 # 5. Интерфейс
 st.title("ML Project RAG Assistant")
-st.write("Задайте вопрос о моих ML-проектах.")
-
-question = st.text_input("Ваш вопрос:")
+st.write("Ask a question about my ML projects.")
+question = st.text_input("Your question:")
 
 if question:
     import streamlit.runtime.scriptrunner as scriptrunner
