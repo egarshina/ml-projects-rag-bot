@@ -86,7 +86,7 @@ if question:
         st.warning("Слишком много запросов. Подождите минуту.")
     else:
         # Поиск контекста
-        contexts = search(question, top_k=3)
+        contexts = search(question, top_k=len(documents))
         context_text = "\n".join(contexts)
 
         # Промпт для LLM
