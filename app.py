@@ -53,7 +53,7 @@ def ask_gigachat(prompt):
         model="GigaChat-3-Ultra",
         messages=[Messages(role=MessagesRole.USER, content=prompt)],
         temperature=0.3,
-        max_tokens=200,
+        max_tokens=1000,
     )
     resp = client.chat(chat)
     return resp.choices[0].message.content
